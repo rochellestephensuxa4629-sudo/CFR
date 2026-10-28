@@ -1,0 +1,15 @@
+torch>=1.10
+torchvision>=0.11
+tensorboard>=2.8
+numpy>=1.19
+scipy>=1.5
+matplotlib>=3.3
+opencv-python>=4.5
+tqdm>=4.60
+Pillow>=8.2
+h5py>=2.10
+pandas>=1.2
+requests>=2.25
+nibabel>=3.2
+pydicom>=2.4
+SimpleITK>=2.3

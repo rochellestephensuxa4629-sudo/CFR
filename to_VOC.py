@@ -202,10 +202,10 @@ def convert_to_voc(json_path, output_base_dir, image_size=(512, 512)):
 # 使用示例
 if __name__ == "__main__":
     # 输入JSON文件路径
-    json_file = "/root/autodl-tmp/LUNA16_datasplit/71_2d.json"
+    json_file = os.environ.get("SOURCE_JSON", "data/source_annotations.json")
     
     # 输出VOC格式目录
-    output_dir = "/root/autodl-tmp/detection/model/yolox-pytorch-main/VOC_CT_Dataset_4"
+    output_dir = os.environ.get("DATA_ROOT", "data")
     
     # 设置图像尺寸（根据你的CT图像尺寸调整）
     image_size = (384, 384)  # 常见的CT切片尺寸
